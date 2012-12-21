@@ -415,8 +415,8 @@ package starling.core
                 mClippedViewPort = mViewPort.intersection(
                     new Rectangle(0, 0, mNativeStage.stageWidth, mNativeStage.stageHeight));
                 
-                if (!mShareContext)
-                {
+                //if (!mShareContext)
+                //{
                     // setting x and y might move the context to invalid bounds (since changing
                     // the size happens in a separate operation) -- so we have no choice but to
                     // set the backbuffer to a very small size first, to be on the safe side.
@@ -429,7 +429,7 @@ package starling.core
                     
                     mSupport.configureBackBuffer(
                         mClippedViewPort.width, mClippedViewPort.height, mAntiAliasing, false);
-                }
+                //}
             }
         }
 
